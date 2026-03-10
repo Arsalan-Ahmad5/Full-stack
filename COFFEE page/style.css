@@ -10,6 +10,16 @@ button{
     background: var(--main-color);
     border:none;
     cursor: pointer;
+    text-transform: capitalize;
+    font-weight:bolder;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+button:hover{
+    background:white;
+    color: var(--main-color);
+
 }
 /* Resets */
 *{
@@ -64,14 +74,14 @@ li a:hover{
 }
 .main-heading{
     position: absolute;
-    top: 8rem;
+    top: 5rem;
     font-size: 4rem;
     word-spacing: 29px;
     
 }
 .primary-heading{
     position: absolute;
-    bottom: 8rem;
+    bottom: 7rem;
     font-size: 4rem;
     word-spacing:29px ;
     margin-bottom: -40px;
@@ -178,6 +188,14 @@ li a:hover{
     border-radius: 15px;
     position: relative;
     margin-bottom: 4rem;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.card:hover{
+    background: var(--main-color);
+    border: 3px solid rgb(106, 60, 19);
+    
+
 }
 .card-img{
     width: 100px;
@@ -211,4 +229,73 @@ li a:hover{
     color:white;
     margin:20px 0;
     font-family: sans-serif;
+    text-transform: capitalize;
+}
+/* products end  */
+footer{
+    height:50vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+
+}
+footer .container{
+    margin: 20px;
+    max-width: 400px;
+    text-align: center;
+}
+footer .heading-info{
+    margin-bottom: 20px;
+}
+footer p{
+    line-height: 25px;
+
+}
+span{
+    color: var(--main-color);
+}
+hr{
+    margin-bottom: 20px;
+    border: var(--main-color);
+}
+.para{
+    color: white;
+}
+/* PROJECT END */
+/* RESPONSIVENESS */
+@media only screen and (max-width:768px) {
+    .main-heading, .primary-heading{
+        font-size: 3rem;
+    }
+    #our-story{
+        text-align: center;
+    }
+    #our-story .title{
+        transform: translateX(50px);
+    }
+    #our-story .line{
+       display: none;
+    }
+    .content-section{
+        text-align: center;
+    }
+    #our-story .img-container .img{
+        
+        text-align: center;
+        margin: 0 auto;
+    }
+    .title-style{
+        display: flex;
+        justify-content: center;    
+            
+    }
+    .title-two{
+        text-align: center;
+    }
+
+
+    
 }
