@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+:root{
+    --main-color:#ac7522;
+    --primary-color:#312e2e;
+    --title-font:"Playfair Display", serif;
+}
+/* Utility Styles */
+button{
+    padding: 10px 30px;
+    background: var(--main-color);
+    border:none;
+    cursor: pointer;
+}
+/* Resets */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#242020;
+}
+/* nav start */
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 15px;
+}
+li{
+    display: inline;
+    list-style: none;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding-bottom: 6px;
+}
+li a:hover{
+    border-bottom: 3px solid white;
+
+}
+/* NAV end */
+/* header starts */
+.header{
+    background: url("https://images.pexels.com/photos/129207/pexels-photo-129207.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family:"Playfair Display", serif; 
+    font-weight: normal;
+    background-attachment: fixed;
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgb(249, 249, 249);
+    position: relative;
+    text-align: center;
+}
+.main-heading{
+    position: absolute;
+    top: 8rem;
+    font-size: 4rem;
+    word-spacing: 29px;
+    
+}
+.primary-heading{
+    position: absolute;
+    bottom: 8rem;
+    font-size: 4rem;
+    word-spacing:29px ;
+    margin-bottom: -40px;
+}
+.main-button{
+    position: absolute;
+    bottom: 2rem;
+    padding: 10px 30px;
+    margin-top:20px;
+    background: transparent;
+    background: var(--main-color);
+    transform: translateY(60px);
+}
+/* our story start */
+#our-story{
+    height: 100vh;
+    margin-top: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+.img{
+    width: 400px;
+    height: 400px;
+    background: url(https://images.pexels.com/photos/1235706/pexels-photo-1235706.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.title-style{
+    display: flex;
+    align-items: center;
+}
+.title{
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    color: white;
+    transform: translateX(-100px);
+}
+.line{
+    width: 100px;
+    height: 2px;
+    background: white;
+    transform: translateX(-120px);
+
+}
+.section-container p{
+    max-width: 500px;
+    color: white;
+    font-family: sans-serif;
+    line-height: 20px;
+    margin: 20px 0;
+
+}
+/* our story end */
+/* coffee start */
+.coffee-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:10rem;
+}
+.img-2{
+    width: 400px;
+    height: 400px;
+}
+.title-two{
+    font-size: 3rem;
+    color: white;
+    font-family:"Playfair Display", serif ;
+    font-weight: normal;
+}
+.content-section p{
+    max-width: 500px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    color: azure;
+}
+/* coffee end */
+.products{
+    margin-top: 5rem;
+}
+.title-three{
+    font-size: 4rem;
+    margin:10rem;
+
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    border: 2px solid var(--main-color);
+    padding: 0 20px;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 4rem;
+}
+.card-img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+
+}
+.img-one{
+    background: url(https://images.pexels.com/photos/3879495/pexels-photo-3879495.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.img-two{
+    background: url(https://images.pexels.com/photos/302896/pexels-photo-302896.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.img-three{
+    background: url(https://images.pexels.com/photos/133222/pexels-photo-133222.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.card-title{
+    color: white;
+    font-family: sans-serif;
+    margin-top: 50px;
+
+}
+.card .items p{
+    color:white;
+    margin:20px 0;
+    font-family: sans-serif;
+}
