@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* reset */
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* variable */
+:root{
+    --main-font:"Cherry Cream Soda", system-ui;
+    --main-color:#c9f6be;
+}
+html{
+    font-family: var(--main-font);
+}
+body{
+    background-color: #000;
+}
+.wrapper{
+    background: url(https://images.pexels.com/photos/2088203/pexels-photo-2088203.jpeg);
+    background-position: center;
+   
+    background-size:cover;
+    background-color:var(--main-color);
+    margin: 1rem;
+}
+/* navbar  start*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+    padding: 20px;
+    background-color: #fff;
+
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+.burger{
+    margin-right: 5rem;
+    cursor: pointer;
+
+}
+
+.burger span{
+    height: 4px;
+    border: 2px solid black;
+    margin: 4px;
+    background: #000;
+}
+/* nav end */
+/* header starts */
+header{
+    /* text-align: center; */
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; */
+    margin: 6rem;
+}
+.main-heading{
+    width: 50%;
+    margin-bottom: 3rem;
+    padding: 20px;
+    font-size: 3rem;
+
+}
+.primary-heading{
+    width: 50%;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+.bg-gray{
+    background-color: #302e2e;
+    color: antiquewhite;
+    padding: 2px 10px;
+}
+/* header end */
+/* main start */
+main{
+    margin:0 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px;
+}
+main .img{
+
+    width: 35%;
+    height: 400px;
+    margin :10px
+    
+}
+/* main end */
+.section-three{
+    margin:4rem;
+    
+    display: flex;
+    
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+ol{ display: flex;
+    
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+    list-style: none;
+    padding: 1rem;
+}
+li{
+    margin-bottom: 20px;
+    color: rgb(199, 12, 59);
+    margin: 10px;
+   
+}
+li span{
+    font-weight: bolder;
+    background-color: #322d2d;
+    padding: 1px 6px;
+    color: #fff;
+   
+}
+.section-three .main-heading{
+    color: rgb(3, 15, 47);
+    font-size: 250%;
+    
+}
+/* section 3 ends */
+/* section 4 starts */
+.section-four{
+    margin: 4rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.img-two{
+    width: 400px;
+    height: 400px;
+    margin: 10px 0;
+}
+.section-four div{
+    margin: 20px 0;
+}
+.heading{
+    justify-self: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+/* section 4 ends */
+/* footer starts */
+footer{margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aliceblue;
+}
+.logo-container{
+    width: 40%;
+    align-self: flex-start;
+}
+.about-company{
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+.container{
+    margin-right: 10px;
+    text-align: center;
+}
+.container h1{
+    margin-bottom: 10px;
+}
+/* footer end */
+/* project end */
+/* responsiveness */
+@media screen and (max-width:740px) {
+    .main-heading{
+       width: 100%;
+       text-align: center;
+    }
+    header .primary-heading{
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .img-two{
+        width:100%;
+    }
+    main .img{
+        
+        width: 100%;
+    }
+}
