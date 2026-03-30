@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(rgba(255, 0, 0, 0.852) ,rgba(101, 29, 168, 0.884)) ;
+    
+    
+}
+section{
+    width: 50vw;
+    padding-left: 10px;
+}
+.card{
+    margin: 2.5rem;
+    border: 2px dashed blueviolet;
+    padding: 20px;
+    background-color: #fff;
+}
+.card-title{
+    text-align: center;
+    margin-bottom: 5px;
+}
+/* scrollbar */
+::-webkit-scrollbar{
+    background: linear-gradient(rgba(97, 107, 7, 0.842),teal,blueviolet);
+    
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+
+background: linear-gradient(315deg, #a47451 0.000%, #9c9881 16.667%, #73a09d 33.333%, #3b899a 50.000%, #095b79 66.667%, #002847 83.333%, #000116 100.000%);
+border-radius: 100px;
+}
