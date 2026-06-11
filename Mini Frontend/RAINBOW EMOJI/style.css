@@ -1,0 +1,18 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #304078, #293c80, #256d75, #1f70b7);
+}
+#emoji{
+    font-size: 10rem;
+    filter:grayscale(100%);
+    cursor: pointer;
+    transition-property: transform,filter;
+    transition-duration: 200ms;
+}
+#emoji:hover{
+    transform: scale(1.3);
+    filter:grayscale(0);
+}
