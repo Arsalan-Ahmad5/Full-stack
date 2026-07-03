@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+
+        <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Welcome to AirBNB Clone</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Here are our registered homes</h2>
+            <ul>
+                <% registeredHome.forEach(home => { %>
+                    <li><%= home.name %></li>
+                <% }); %>
+            </ul>
+        </section>
+        <a href="/host/add-home">Add Home</a><br>
+    </main>
+</body>
+</html>

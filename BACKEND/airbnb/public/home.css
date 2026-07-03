@@ -1,0 +1,12 @@
+header{
+    background: black;
+    color: red;
+    text-align: center;
+    padding: 50px;
+    font-size: 2rem;
+}
+
+main{
+    padding: 25px;
+    color: black;
+}
